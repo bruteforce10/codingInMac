@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "belajar";
+  src: url(digital-7.ttf);
+}
+
+p {
+  font-family: "belajar";
+}

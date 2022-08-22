@@ -1,0 +1,19 @@
+.div_menu {
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-transform: full-width;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+p {
+  text-align:justify;
+}

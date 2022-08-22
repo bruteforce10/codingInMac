@@ -1,0 +1,28 @@
+.tengah {
+  text-align: center;
+  text-decoration: overline;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.kiri {
+  text-align: left;
+  text-decoration: line-through;
+  text-transform: lowercase;
+}
+
+.kanan {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.kanankiri {
+  text-align: justify;
+  /* untuk membuat spasi paragraf */
+  text-indent: 80px;
+  word-spacing: 4px;
+}
+
+a {
+  text-decoration: none;
+}

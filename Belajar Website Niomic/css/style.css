@@ -1,0 +1,12 @@
+p {
+  color:red;
+}
+
+
+body {
+  /* background-color: grey;
+  background-image: url(../gambar.jpg);
+  background-repeat: no-repeat;
+  background-position: center top; */
+  background: grey url(../gambar.jpg) no-repeat center top
+}

@@ -1,0 +1,34 @@
+.kotak {
+  /* absoulte harus dibungkus dengan pembungkus induk relative */
+  position: absolute;
+  background-color: blue;
+  left: 20px;
+  margin: 0;
+}
+
+.belajar {
+  position: relative;
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+}
+
+.fix {
+  background-color: green;
+  /* apabila di scroll ikut berjalan */
+  position: fixed;
+  bottom: 40px;
+  left: 80px;
+}
+
+.sticky {
+  background-color: blue;
+  /* tetap diposisi awal, bila discroll ikut berjalan */
+  position: sticky;
+  top: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}

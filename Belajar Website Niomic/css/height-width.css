@@ -1,0 +1,23 @@
+p {
+  background-color: yellow;
+}
+
+.normal {
+  height: 100px;
+  width: 200px;
+}
+
+.minimum {
+  min-height: 50px;
+  width: 200px;
+}
+
+.maximum {
+  max-height: 100px;
+  width: 200px;
+}
+
+.auto {
+  height: auto;
+  width: 200px;
+}

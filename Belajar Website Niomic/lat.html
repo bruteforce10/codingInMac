@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Important</title>
+
+    <style media="screen">
+      #judul {
+        color: "red";
+      }
+      <!-- karena bobot id lebih tinggi maka yang akan terlihat warna merah, tetapi karena ada important, id selector akan kalah dengan class selector -->
+      .isi {
+        color: "green" !important;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Belajar Important</h1>
+      <p class="isi" id="judul">Paragraf ini berupa apa?</p>
+  </body>
+</html>

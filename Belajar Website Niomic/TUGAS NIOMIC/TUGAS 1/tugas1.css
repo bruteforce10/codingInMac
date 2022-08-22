@@ -1,0 +1,6 @@
+/* Apa itu CSS? CSS adalah bahasa lembar gaya berjenjang dan biasanya digunakan untuk menyesuaikan tampilan elemen yang ditulis dalam bahasa markup seperti HTML. CSS digunakan untuk memisahkan konten dari tampilan visualnya di halaman. */
+
+p {
+  font-size: 18px;
+  color: blue;
+}

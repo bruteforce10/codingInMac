@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Belajar</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- atau bisa disini taruh css nya -->
+  <!-- <style>
+    p {
+      color: red;
+    }
+  </style> -->
+</head>
+
+<body>
+  <h1>Hello HTML</h1>
+
+  <!-- menambahkan formatting text pada elemen -->
+  <p>belajar <i>html</i></p>
+  <p>belajar <b>html</b></p>
+  <p>belajar <u>html</u></p>
+  <!-- membuat garis menjadi dicoret -->
+  <p>belajar <s>html</s></p>
+  <!-- tulisan menjadi kecil -->
+  <p>belajar <small>html</small></p>
+  <!-- membuat pangkat keatas -->
+  <p>m <sup>2</sup></p>
+  <!-- membuat pangkat kebawah -->
+  <p>C <sub>ol</sub></p>
+  <!-- membuat tanda seperti stabilo -->
+  <p>belajar <mark>html</mark></p>
+
+<br><br>
+  <h2>untuk kebutuhan SEO menggunakan fungsi ini</h2>
+  <p>belajar <em>html</em></p>
+  <p>belajar <strong>html</strong></p>
+  <p>belajar <ins>html</ins></p>
+  <p>belajar <del>html</del></p>
+
+<!-- fungsi atribut target supaya membuka tab baru -->
+<a href="https://google.com" target="_blank">Klik disini</a>
+
+<!-- fungsi atribut alt adalah pemberian nama label pada gambar --><br>
+<img src="" alt="gambar pemandangan"></img>
+
+<br><br>
+
+<h1>CONTOH TABEL</h1>
+<table>
+<tr>
+  <th>No</th>
+  <th>Nama</th>
+  <th>Kelas</th>
+</tr>
+
+<tr>
+  <td>1</td>
+  <td>Firdi</td>
+  <td>Semester 6</td>
+</tr>
+</table>
+
+<br><br>
+<ul>
+  <li>Ayam Bakar</li>
+  <li>Sapi</li>
+</ul>
+
+<!-- fungsi type ini merupakan kategori urutan -->
+<ol type="a">
+  <li>Rujak</li>
+  <li>Buah-buahan</li>
+</ol>
+
+<br><br>
+<iframe src="https://www.google.com/?hl=id" width="500" height="500"></iframe>
+
+<br><br>
+
+<h3>CONTOH DARI INPUT FORM</h3>
+<form>
+<input type="text"><br>
+<input type="password"><br>
+<input type="submit"><br>
+<!-- untuk mereset text penting -->
+<input type="reset"><br>
+<input type="button"><br>
+<input type="radio"><br>
+<input type="checkbox"><br>
+<input type="color"><br>
+<input type="date"><br>
+<input type="datetime-local"><br>
+<input type="email"><br>
+<input type="month"><br>
+<input type="number"><br>
+<input type="range"><br>
+<input type="search"><br>
+<input type="week"><br>
+<input type="time"><br>
+<input type="url"><br>
+</form>
+
+<br><br><br><br>
+<h3>CONTOH MENGGUNAKAN FIELDSET DAN LEGEND DI FORM</h3>
+<form>
+  <fieldset>
+  <legend>Input Nama</legend>
+  <input type="text">
+  </fieldset>
+
+  <fieldset>
+  <legend>Input Password</legend>
+  <input type="password">
+  </fieldset>
+</form>
+
+<br><br><br>
+
+<h4>Contoh Dropdown Select List</h4>
+<select>
+  <!-- fungsi opt grup adalah untuk men sub pilihan  -->
+  <optgroup label="Sate">
+    <option>Sate Kambing</option>
+    <option>Sate Kambing</option>
+  </optgroup>
+
+  <optgroup label="Kuah">
+    <option>Soto</option>
+    <option>Sup</option>
+  </optgroup>
+</select>
+
+<br><br><br>
+
+<h4>rekomendasi pada saat isi inputan</h4>
+<input type="text" list="isidatalist">
+<datalist id="isidatalist">
+  <option>Ayam</option>
+  <option>Sate</option>
+  <option>Gulai</option>
+</datalist>
+
+<br><br><br>
+<label>Alamat</label>
+<textarea rows="8" cols="80"></textarea>
+<button>Submit</button>
+<!-- pembeda antara button dengan input button adalah hanya pada fungsi yg digunakan   -->
+<!-- jadi ketika pada elemen form disarankan menggunakan input button -->
+
+<br><br><br>
+
+<h2>FUNGSI ATRIBUT INPUT</h2>
+<label>Nama</label>
+<!-- fungsi readonly hanya bisa dibaca tidak bisa diubah -->
+<!-- fungsi disable adalah mematikan kolom inputannnya -->
+<!-- perbedaan antara id dan class adalah -->
+<!-- id harus uniqe hanya bisa digunakan pada 1 lokasi -->
+<!-- class boleh sama semua lokasi -->
+<input type="text" value="Firdi Audi Putra" readonly id="peserta1" class="inputName">
+
+</body>
+
+</html>

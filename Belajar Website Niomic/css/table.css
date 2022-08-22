@@ -1,0 +1,23 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: blue;
+  height: 60px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.hov:hover {
+  background-color: orange;
+}
+
+th, td {
+  border-bottom: 1px solid red;
+}

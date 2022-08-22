@@ -1,0 +1,54 @@
+.cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  margin-right: 20px;
+}
+
+.aja {
+  background-color: red;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  align-items: flex-end;
+}
+
+
+.satu {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.dua {
+  width: 100px;
+  height: 200px;
+  background-color: blue;
+}
+
+.tiga {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.empat {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.lima {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
