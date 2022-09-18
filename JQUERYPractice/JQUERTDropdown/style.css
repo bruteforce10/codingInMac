@@ -1,0 +1,53 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: midnightblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 700px;
+    margin: 50px auto;
+    padding: 8px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar ul li a {
+    color: #2a333b;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 9px;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.navbar ul li ul li {
+    display: block;
+}
+
+.navbar ul li ul li a {
+    color: #666;
+    display: block;
+}
+
+.navbar ul li ul li a:hover {
+    background-color: seagreen;
+    color: white;
+}
