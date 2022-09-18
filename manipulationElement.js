@@ -5,14 +5,14 @@
 
 
 // manipulasi Atribut
-const judulh1 = document.getElementsByTagName('h1')[0];
-// menambahkan atribut name dengan value firdi, bisa cek di inspect
-judulh1.setAttribute('name', 'firdi');
+// const judulh1 = document.getElementsByTagName('h1')[0];
+// // menambahkan atribut name dengan value firdi, bisa cek di inspect
+// judulh1.setAttribute('name', 'firdi');
 // mengembalikan atribut
 const a = document.querySelector('section#a a');
 a.getAttribute('href');
 // menghapus atribut
-a.removeAttribute('href');
+// a.removeAttribute('href');
 
 // cara menambahkan atribut class baru tanpa harus mengganti isi atribut classnya
 const p2 = document.querySelector('.p2');
