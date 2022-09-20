@@ -1,4 +1,4 @@
-// Event pada saat link
+    // Event pada saat link
 $('.page-scroll').on('click', function (e) {
 
 // ambil isi href
