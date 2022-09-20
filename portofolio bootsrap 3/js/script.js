@@ -13,5 +13,47 @@ $('body').animate({
 });
 
 e.preventDefault();
+});
 
+
+
+// Parallax
+
+// about
+$(window).on('load', function() {
+    $('.pkiri').addClass('pMuncul');
+    $('.pkanan').addClass('pMuncul');
+
+})
+
+
+
+// portofolio
+$(window).scroll(function(){
+    let wscroll = $(this).scrollTop();
+
+    $('.jumbotron img').css({
+        'transform' : `translate(0px, ${wscroll/4}%)`
+    });
+
+    $('.jumbotron h1').css({
+        'transform' : `translate(0px, ${wscroll/2}%)`
+    });
+
+    $('.jumbotron p').css({
+        'transform' : `translate(0px, ${wscroll/1.2}%)`
+    });
+
+    // Portofolio
+    if (wscroll > 500) {
+        $('.portofolio .thumbnail').each(function(i){
+            setTimeout(function(){
+            console.log( $('.portofolio .thumbnail').eq(i));
+            $('.portofolio .thumbnail').eq(i).addClass('muncul');
+            }, 300 / i);
+        });
+
+    
+
+    };
 });
