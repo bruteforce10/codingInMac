@@ -50,7 +50,7 @@ $(window).scroll(function(){
             setTimeout(function(){
             console.log( $('.portofolio .thumbnail').eq(i));
             $('.portofolio .thumbnail').eq(i).addClass('muncul');
-            }, 300 / i);
+            }, 300 * i);
         });
 
     
