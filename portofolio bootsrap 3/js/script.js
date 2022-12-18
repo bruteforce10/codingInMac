@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+
     // Event pada saat link
 $('.page-scroll').on('click', function (e) {
 
@@ -5,6 +8,8 @@ $('.page-scroll').on('click', function (e) {
 var tujuan = $(this).attr('href');
 // Tangkap Elemen yang bersangkutan
 var elemenTujuan = $(tujuan);
+console.log(tujuan);
+console.log(elemenTujuan);
 
 
 // Pindahkan Scroll
@@ -14,6 +19,9 @@ $('body').animate({
 
 e.preventDefault();
 });
+
+});
+
 
 
 

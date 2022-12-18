@@ -1,0 +1,51 @@
+html {
+    /* Agar transisi pergantian dark mode menjadi lebih smooth */
+    transition: 0.4s; 
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+
+.dark-mode {
+    background: #2a2a39;
+    color: white;
+}
+
+
+.toggle {
+    width: 45px;
+    height: 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    transform: translateX(2px);
+    border-radius: 30px;
+    transition: .4s;
+    position: absolute;
+    background: white;
+}
+
+
+.dark-mode .circle {
+    transform: translateX(23px);
+}
+
+.toggle-moon, .toggle-sun {
+    width: 50%;
+}

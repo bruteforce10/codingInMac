@@ -1,0 +1,35 @@
+    body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #myModal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 120px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #modalContent {
+            background-color: #fefefe;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            width: 60%;
+        }
+
+        #closeModalIcon {
+            color: #aaaaaa;
+            float: right;
+        }
+
+        #closeModalIcon:hover,
+        #closeModalIcon:focus {
+            color: #000;
+            cursor: pointer;
+        }

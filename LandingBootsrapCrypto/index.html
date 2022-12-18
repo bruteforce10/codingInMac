@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>CryptoWallet</title>
+    <style>
+        body {
+            background-image: linear-gradient(82.94deg, #F0F2FB 50.57%, #FEFEFF 77.18%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" width="40px">
+                    <img src="./assets/logo-text.png" alt="logo-text" width="163px"></a>
+                <div class="vr mx-2 d-none d-lg-inline" style="width: 2px; height: 30px; margin-top: 10px;"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" aria-current="page" href="#">Exchange</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid d-md-flex gap-2">
+                        <button class="btn btn-outline-success rounded-pill px-4" type="submit">Masuk</button>
+                        <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" type="submit">Daftar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid border-top border-2">
+    </div>
+    <!-- Hero -->
+    <div class="container my-3">
+        <div class="row align-items-center">
+            <div class="col text-center text-md-start">
+                <h1 class="fw-bold">
+                    Jual Beli Cypto dalam hitungan menit
+                </h1>
+                <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, ipsam?</p>
+                <button class="btn btn-primary rounded-pill px-4">Lihat Market Trend</button>
+            </div>
+            <div class="col d-none d-md-inline">
+                <img src="./assets/hero.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Info -->
+    <div class="container">
+        <div class="card p-4 border-0 shadow-sm">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-start my-3 my-md-0">
+                    <img src="./assets/icon1.png" alt="">
+                    <div class="text-secondary">Bitcoin/BTC</div>
+                    <h4 class="fw-bold">$61,389,87</h4>
+                    <div class="text-success">+0.67%</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-3 text-center text-md-start my-3 my-md-0">
+                        <img src="./assets/icon1.png" alt="">
+                        <div class="text-secondary">Bitcoin/BTC</div>
+                        <h4 class="fw-bold">$61,389,87</h4>
+                        <div class="text-success">+0.67%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-3 text-center text-md-start my-3 my-md-0">
+                        <img src="./assets/icon1.png" alt="">
+                        <div class="text-secondary">Bitcoin/BTC</div>
+                        <h4 class="fw-bold">$61,389,87</h4>
+                        <div class="text-success">+0.67%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-3 text-center text-md-start my-3 my-md-0">
+                        <img src="./assets/icon1.png" alt="">
+                        <div class="text-secondary">Bitcoin/BTC</div>
+                        <h4 class="fw-bold">$61,389,87</h4>
+                        <div class="text-success">+0.67%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-menu">
+            <img src="./assets/logo.png" class="logo" alt="logo image">
+            <img src="./assets/logo-text.png" class="logo-text" alt="logo text">
+            <li class="nav-list"><a href="">Exchange</a></li>
+            <li class="nav-list"><a href="">Market</a></li>
+        </div>
+        <div class="header-action">
+            <button class="btn btn-primary">Masuk</button>
+            <button class="btn btn-secondary" id="btnRegister">Daftar</button>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Jual Beli Crypto dalam hitungan menit</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem modi tempore iste, quasi natus molestiae
+                adipisci inventore voluptatum possimus eius.</p>
+            <button class="btn btn-primary">Lihat Market</button>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/hero.png" alt="hero">
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!-- Info -->
+    <div class="info">
+        <div class="info-card">
+            <div class="info-list">
+                <img src="./assets/icon1.png" alt="">
+                <div>Bitcoin/BTC</div>
+                <h4>$64,333,632</h4>
+                <div>+0.674</div>
+            </div>
+            <div class="info-list">
+                <img src="./assets/icon1.png" alt="">
+                <div>Bitcoin/BTC</div>
+                <h4>$64,333,632</h4>
+                <div>+0.674</div>
+            </div>
+            <div class="info-list"> <img src="./assets/icon1.png" alt="">
+                <div>Bitcoin/BTC</div>
+                <h4>$64,333,632</h4>
+                <div>+0.674</div>
+            </div>
+            <div class="info-list"> <img src="./assets/icon1.png" alt="">
+                <div>Bitcoin/BTC</div>
+                <h4>$64,333,632</h4>
+                <div>+0.674</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Info -->
+    <!-- Modal -->
+    <div class="modal" id="modalRegister">
+        <div class="modal-content">
+            <div class="modal-close">
+                <span class="icon-close">&times;</span>
+            </div>
+            <h4>Daftar ke Cryptowallet</h4>
+            <div class="modal-desc">
+                Sudah punya akun? <a href="#">Masuk disini</a>
+            </div>
+            <form>
+                <div class="form-input">
+                    <label>Email</label>
+                    <input type="text" placeholder="Masukkan Email">
+                </div>
+                <div class="form-input">
+                    <label>Kata Sandi</label>
+                    <input type="password" placeholder="Masukkan Kata Sandi">
+                </div>
+                <div class="form-input">
+                    <label>Ulangi Kata Sandi</label>
+                    <input type="password" placeholder="Masukkan Ulangi Kata Sandi">
+                </div>
+                <button class="btn btn-primary btn-block">Daftar</button>
+            </form>
+            <div class="modal-footer">
+                Dengan klik mendaftar, saya menyetujui <a href="#">Syarat & Ketentuan</a> Serta <a href="#">Kebijakan
+                    Privasi</a> Cryptowallet
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <script>
+        let btnRegister = document.getElementById('btnRegister');
+        let modalRegister = document.querySelector('#modalRegister');
+        let btnCloseModal = document.getElementsByClassName("icon-close")[0];
+
+        btnRegister.onclick = function () {
+            modalRegister.style.display = "flex";
+        }
+
+        btnCloseModal.onclick = function () {
+            modalRegister.style.display = "none";
+        }
+
+        window.onclick = function () {
+            if (event.target == modalRegister) {
+                modalRegister.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

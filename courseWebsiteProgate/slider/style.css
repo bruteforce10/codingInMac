@@ -1,0 +1,45 @@
+.slider-container {
+  text-align: center;
+  background-color: #eee;
+}
+
+.slider-item {
+  display: none; /* Tersembunyi secara default */
+}
+
+img {
+  width: 30%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 150px;
+  left: 32%;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+/* Animasi */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

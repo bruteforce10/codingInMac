@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek HTML & CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="header-left">
+                <h3>NINJA KEN</h3>
+            </div>
+            <div class="header-right">
+                <ul class="slide">
+                    <li>Tentang Saya</li>
+                    <li>Proyek Contoh</li>
+                    <li>Hubungi Saya</li>
+                </ul>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="check">
+                <label class="circle" for="check"></label>
+                <div class="toggle-moon"><i class="fas fa-moon"></i></div>
+                <div class="toggle-sun"><i class="fas fa-sun"></i></div>
+            </div>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="top-wrapper">
+        <div class="heading animate__animated animate__lightSpeedInLeft">
+            <h1>NINJA KEN<span>.</span></h1>
+            <p>MY PORTOFOLIO</p>
+        </div>
+        <div class="figure">
+            <img class="animate__animated animate__lightSpeedInLeft" src="img/Ninja Ken.png" alt="judul ninja Ken"
+                width="200">
+        </div>
+    </div>
+
+    <div class="about-wrapper">
+        <h2>Tentang Saya</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quibusdam minus aspernatur
+            alias praesentium
+            sunt quisquam explicabo eum, ipsum deleniti, doloremque dolorum totam ipsa eaque. Tenetur et architecto
+            minima omnis.</p>
+    </div>
+
+    <div class="swiper mySwiper" style="background-color: #F4F4F4;">
+        <h2 style="text-align: center;">Gallery</h2>
+        <div class="swiper-wrapper" id="openModalButton">
+            <div class="swiper-slide">
+                <img src="img/slider1.png" width="400">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider2.png" width="400">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider3.png" width="400">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider4.png" width="400">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider5.png" width="400">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider6.png" width="400">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="container-modal">
+            <img src="img/1.png" width="400">
+            <span id="closeModalIcon">&times;</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi incidunt assumenda consectetur magni?
+                Reprehenderit tempore nihil, libero eveniet unde quibusdam pariatur recusandae asperiores cumque veniam.
+                Qui
+                expedita corporis iure culpa?</p>
+        </div>
+    </div>
+
+
+    <div class="form-wrapper">
+        <h2>Hubungi Saya</h2>
+        <div class="form">
+            <input type="text" placeholder="Email (Diperlukan)" id="email">
+            <div id="error" class="error"></div>
+            <textarea name="message" rows="2" placeholder="Message (Diperlukan)"></textarea>
+            <div class="btn" onclick="validateForm()">Kirim</div>
+        </div>
+    </div>
+
+
+
+    <h2 style="text-align: center; background-color: #F4F4F4;">FAQ</h2>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Ninja Ken</p>
+        <p>Guru Domba</p>
+        <p>Bayi Ben</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>Ninja Ken</p>
+        <p>Guru Domba</p>
+        <p>Bayi Ben</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Ninja Ken</p>
+        <p>Guru Domba</p>
+        <p>Bayi Ben</p>
+    </div>
+
+
+
+    <footer>
+        <h2>NINJA KEN</h2>
+        <div class="list-footer">
+            <ul>
+                <li>Tentang Saya</li>
+                <li>Proyek Contoh</li>
+                <li>Hubungi Saya</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d6e78495c8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+
+</html>

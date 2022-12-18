@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: rgb(70,89,255);
+    --bg-secondary: #eaeaea;
+    --text-primary:#f7f7f7;
+    --text-secondary: #222222;
+    --icon-bg-primary : tomato;
+    --icon-bg-secondary: #777777;
+}
+
+.text-center {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,.5);
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icon-bg-primary);
+}
+
+.title{
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.desc {
+    font-size: .5em;
+}
+
+.btn {
+    margin-top: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    transition: .3s all ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transform: rotate(2deg);
+}
+
+@media screen and (max-width: 476px)  {
+    .card {
+        width: 95%;
+    }
+}
