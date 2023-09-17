@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "name": "banana",
+      "price": 200,
+      "volume": "20000"
+    },
+    {
+      "volume": 1,
+      "name": "dassadsda",
+      "price": "1211212",
+      "id": 6
+    },
+    {
+      "volume": 1,
+      "name": "dassadsdasadasdsad",
+      "price": "1211212121212",
+      "id": 7
+    },
+    {
+      "volume": 1,
+      "name": "asssa",
+      "price": "1221",
+      "id": 8
+    },
+    {
+      "volume": 1,
+      "name": "fgfgfg",
+      "price": "3232",
+      "id": 9
+    },
+    {
+      "volume": 1,
+      "name": "adssdasd",
+      "price": "13322323",
+      "id": 10
+    },
+    {
+      "volume": 1,
+      "name": "babi",
+      "price": "0",
+      "id": 11
+    },
+    {
+      "volume": 1,
+      "name": "kucingsdas",
+      "price": "10",
+      "id": 12
+    },
+    {
+      "volume": 1,
+      "name": "kitten ",
+      "price": "100000",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+@import "fonts";
+@import "mixin";
+@import "variable";
+
+// style
+body {
+  font-family: "Montserrat", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../img/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50vmax;
+    position: absolute;
+    top: 0;
+    margin-top: 160px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -99;
+    @media screen and (max-width: 992px) {
+      opacity: 0.4;
+    }
+  }
+}
+
+// navbar
+.costum-nav {
+  .navbar-brand {
+    img {
+      width: 100px;
+      margin-top: -5px;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 0.3em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-left: 2.2em;
+          transition: 0.3s color ease;
+
+          &:hover {
+            color: darken($primaryColor, 30%);
+          }
+        }
+
+        .sign-up-button {
+          @include tombol();
+          margin-left: 2.2em;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 2rem;
+  }
+}
+
+.row.costum-section {
+  margin-top: 10em;
+  h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  h3 {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 3rem;
+    color: $secondaryColor;
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    margin-top: 2em;
+  }
+
+  a {
+    @include tombol();
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 3.5em;
+    text-align: center;
+    h2,
+    h3,
+    p {
+      text-shadow: 1px 1px 1px rgba($color: $textColor, $alpha: 0.3);
+    }
+  }
+}

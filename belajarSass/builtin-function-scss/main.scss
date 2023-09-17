@@ -1,0 +1,34 @@
+$warna-dasar: salmon;
+
+h1 {
+  color: $warna-dasar;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+// Built-in Modules Color
+// adjust-color(
+//     $color: #000000,
+//     $red: 1,
+//     $green: 2,
+//     $blue: 3,
+//     $hue: 0,
+//     $saturation: 0%,
+//     $lightness: 0%,
+//     $alpha: 1)
+
+// h1 {
+//   color: adjust-color($color: $warna-dasar, $green: 20, $blue: 255);
+// }
+
+// adjust-hue()
+// h1 {
+//   color: adjust-hue($color: $warna-dasar, $degrees: 120%);
+// }
+
+// complement($color)
+// akan memilih warna yang bersebrangan/ berlawanan yang kita pilih
+
+
+

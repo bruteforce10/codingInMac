@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.typed-cursor {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .typed-cursor {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typed-cursor {
+    font-size: 20px;
+  }
+}

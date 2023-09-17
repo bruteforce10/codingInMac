@@ -1,0 +1,11 @@
+@use "mixin";
+.header ul {
+  @include mixin.inline-list();
+  li {
+    background-color: black;
+    padding: 0.7rem;
+    a {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+  </head>
+  <body>
+    <h3>My Todo List</h3>
+    <form id="myForm">
+      <input type="text" placeholder="What you want to do" id="textTodo" />
+      <button type="submit" id="btn">Add</button>
+    </form>
+    <script src="main.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCzP6kCHPXp8wAiINkW3al96d2QbYl6izo",
+        authDomain: "todolist-e8b93.firebaseapp.com",
+        projectId: "todolist-e8b93",
+        storageBucket: "todolist-e8b93.appspot.com",
+        messagingSenderId: "98202789969",
+        appId: "1:98202789969:web:42e4382f5e01b5c4caf070",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>

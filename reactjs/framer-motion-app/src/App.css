@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-container {
+  padding-bottom: 5rem;
+}
+
+.App {
+  padding: 5rem;
+}
+
+.box {
+  width: 15rem;
+  height: 15rem;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxItem {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  padding: 2rem;
+  list-style: none;
+  margin: 0.5rem;
+}
+
+button {
+  color: white;
+  padding: 1rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  border: none;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.page-container-1 {
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.page-container-2 {
+  background-color: green;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.link-page {
+  margin-top: 10px;
+}

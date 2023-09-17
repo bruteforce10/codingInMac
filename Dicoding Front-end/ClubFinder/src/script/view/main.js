@@ -3,9 +3,27 @@ const main = function () {
   const buttonSearchElement = document.querySelector("#searchButtonElement");
   const clubListElement = document.querySelector("#clubList");
 
-  const onButtonSearchClicked = function () {
-    const dataSource = new DataSource(renderResult, fallbackResult);
-    dataSource.searchClub(searchElement.value);
+  // cara callback dengan menggunakan oop prototype
+  // const onButtonSearchClicked = function () {
+  //   const dataSource = new DataSource(renderResult, fallbackResult);
+  //   dataSource.searchClub(searchElement.value);
+  // };
+
+  // cara constructor dengan promise
+  // const onButtonSearchClicked = function () {
+  //   DataSource.searchClub(searchElement.value)
+  //     .then(renderResult)
+  //     .catch(fallbackResult);
+  // };
+
+  // cara async await
+  const onButtonSearchClicked = async function () {
+    try {
+      const result = await DataSource.searchClub(searchElement.value);
+      renderResult(result);
+    } catch (message) {
+      fallbackResult(message);
+    }
   };
 
   const renderResult = function (results) {

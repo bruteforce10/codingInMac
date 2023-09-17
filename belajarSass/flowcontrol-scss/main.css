@@ -1,0 +1,143 @@
+body {
+  min-height: 10000px;
+}
+
+.square-profile {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.circle-profile {
+  width: 80px;
+  height: 80px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.nav {
+  background-color: #eaeaea;
+  color: #333;
+}
+
+.right {
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.6666666667em;
+  border-bottom-color: black;
+}
+
+.warna {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.warna li:nth-child(1) {
+  padding: 4px;
+  background-color: #ff0f0f;
+}
+.warna li:nth-child(2) {
+  padding: 4px;
+  background-color: #ff1f1f;
+}
+.warna li:nth-child(3) {
+  padding: 4px;
+  background-color: #ff2e2e;
+}
+.warna li:nth-child(4) {
+  padding: 4px;
+  background-color: #ff3d3d;
+}
+.warna li:nth-child(5) {
+  padding: 4px;
+  background-color: #ff4d4d;
+}
+.warna li:nth-child(6) {
+  padding: 4px;
+  background-color: #ff5c5c;
+}
+.warna li:nth-child(7) {
+  padding: 4px;
+  background-color: #ff6b6b;
+}
+.warna li:nth-child(8) {
+  padding: 4px;
+  background-color: #ff7a7a;
+}
+.warna li:nth-child(9) {
+  padding: 4px;
+  background-color: #ff8a8a;
+}
+.warna li:nth-child(10) {
+  padding: 4px;
+  background-color: #ff9999;
+}
+
+.warna {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.warna li:nth-child(1) {
+  padding: 4px;
+  background-color: #007100;
+}
+.warna li:nth-child(2) {
+  padding: 4px;
+  background-color: #006100;
+}
+.warna li:nth-child(3) {
+  padding: 4px;
+  background-color: #005200;
+}
+.warna li:nth-child(4) {
+  padding: 4px;
+  background-color: #004300;
+}
+.warna li:nth-child(5) {
+  padding: 4px;
+  background-color: #003400;
+}
+.warna li:nth-child(6) {
+  padding: 4px;
+  background-color: #002400;
+}
+.warna li:nth-child(7) {
+  padding: 4px;
+  background-color: #001500;
+}
+.warna li:nth-child(8) {
+  padding: 4px;
+  background-color: #000600;
+}
+.warna li:nth-child(9) {
+  padding: 4px;
+  background-color: black;
+}
+.warna li:nth-child(10) {
+  padding: 4px;
+  background-color: black;
+}
+
+.socials {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.socials .youtube {
+  color: red;
+}
+.socials .facebook {
+  color: blue;
+}
+.socials .twitter {
+  color: rgb(0, 221, 255);
+}
+.socials .instagram {
+  color: orange;
+}/*# sourceMappingURL=main.css.map */

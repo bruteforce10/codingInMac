@@ -1,0 +1,105 @@
+// .main {
+//   background-color: lightblue;
+//   .main-heading {
+//     font-size: 2rem;
+//   }
+//   .main-paragraph {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// .main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 2px;
+//   }
+// }
+
+// &
+// Parent Selector
+// .main {
+//   .container & {
+//     background-color: lightblue;
+//   }
+//   &-heading {
+//     color: red;
+//   }
+//   &:hover {
+//     background-color: bisque;
+//   }
+// }
+
+// .footer {
+//   & &-heading {
+//     color: green;
+//   }
+//   & &-paragraph {
+//     color: blue;
+//   }
+// }
+
+// CSS Variable
+// dibaawah ini adalah contoh variable css
+// :root {
+//   --primary-color: red;
+//   --secondary-color: green;
+//   --text-color: grey;
+// }
+
+// body {
+//   background-color: var(--primary-color);
+// }
+
+// dibawah ini contoh menggunakan scss variable
+// untuk perilaku pada scss variable
+// penamaan menggunakan pemisah pada nama menggunakan "-" dan "_" itu dianggap variable yang sama
+// bisa terbatasi pada scope seperti bahasa javascript, berarti bisa membuat variable local. jadi bisa membuat variable yang sama tetapi dengan scope yang berbeda
+// $primary-color: red;
+// $secondary-color: green;
+// $text-color: black;
+
+// body {
+//   background-color: $primary-color;
+// }
+
+// contoh variable local
+// disini akan menghasilkan undefined
+// body {
+//   $primary-color: red;
+//   background-color: $primary-color;
+// }
+
+// h1 {
+//   color: $primary-color;
+// }
+// // solusinya bisa di nesting h1 ke scope body
+// body {
+//   $primary-color: red;
+//   background-color: $primary-color;
+
+//   h1 {
+//     color: $primary-color;
+//   }
+// }
+// solusi kedua bisa paksa variable local menjadi global dengan menuliskan syntax !global
+// body {
+//   $primary-color: red !global;
+//   background-color: $primary-color;
+// }
+
+// h1 {
+//   color: $primary-color;
+// }
+
+// feature variable untuk mapping seperti membuat array associative dan object seperti bahasa pemograman php, jadi mempunyai key dan value
+// digunakan apabila code html dan css kita semakin kompleks dan berkembang jadi dapat memudahkan proses penamaan dengan key & value yang sama
+// $alert: (
+//   "danger": red,
+//   "success": green,
+//   "warning": orange,
+// );
+
+// h1 {
+//   color: map-get($alert, "success");
+// }

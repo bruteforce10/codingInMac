@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "volume": "1",
+      "name": "new adssdasd",
+      "price": "13322323",
+      "id": 10
+    },
+    {
+      "volume": "5",
+      "name": "kucingsdas",
+      "price": "10",
+      "id": 12
+    },
+    {
+      "volume": 1,
+      "name": "kitten ",
+      "price": "100000",
+      "id": 13
+    },
+    {
+      "name": "nanas",
+      "price": "100",
+      "volume": 1,
+      "id": 14
+    },
+    {
+      "name": "nanas",
+      "price": "100",
+      "volume": 1,
+      "id": 15
+    },
+    {
+      "name": "kucing",
+      "price": "0",
+      "volume": 1,
+      "id": 16
+    }
+  ]
+}
